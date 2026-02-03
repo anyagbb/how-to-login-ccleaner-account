@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+    <!-- Primary Meta Tags -->
+    <title>CCleaner Login | Official Secure Access Portal for PC Optimization Tools</title>
+    <meta name="title" content="CCleaner Login | Official Secure Access Portal for PC Optimization Tools">
+    <meta name="description" content="Secure login portal for CCleaner users. Access your PC optimization dashboard, manage subscriptions, and optimize system performance from the official CCleaner login page.">
+    <meta name="keywords" content="CCleaner login, CCleaner sign in, PC optimization login, system cleanup tools, privacy protection login, CCleaner account access, PC performance dashboard, CCleaner pro login, computer maintenance tools, secure software login">
+    <meta name="author" content="CCleaner (Piriform)">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://app-ccleaner.net/">
+    <meta property="og:title" content="CCleaner Login | Official Secure Access Portal">
+    <meta property="og:description" content="Secure login portal for CCleaner users. Access your PC optimization dashboard and system cleanup tools.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://app-ccleaner.net/">
+    <meta property="twitter:title" content="CCleaner Login | Official Secure Access Portal">
+    <meta property="twitter:description" content="Secure login portal for CCleaner users. Access your PC optimization dashboard and system cleanup tools.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://app-ccleaner.net/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://www.ccleaner.com/sites/default/files/cc-favicon.ico">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            color: #00a8e8;
+            font-size: 28px;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1a237e;
+            background: linear-gradient(90deg, #1a237e, #00a8e8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #00a8e8;
+        }
+        
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 60px 0;
+        }
+        
+        .hero-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+        
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1a237e;
+            line-height: 1.2;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        
+        .login-portal {
+            background-color: #fff;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .login-icon {
+            font-size: 64px;
+            color: #00a8e8;
+            margin-bottom: 20px;
+        }
+        
+        .login-portal h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #1a237e;
+        }
+        
+        .login-portal p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .login-button {
+            display: inline-block;
+            background: linear-gradient(90deg, #1a237e, #00a8e8);
+            color: white;
+            text-decoration: none;
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(26, 35, 126, 0.2);
+        }
+        
+        .login-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(26, 35, 126, 0.3);
+        }
+        
+        .login-button i {
+            margin-left: 10px;
+        }
+        
+        /* Features Section */
+        .features-section {
+            margin-bottom: 80px;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 50px;
+            color: #1a237e;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 36px;
+            color: #00a8e8;
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #1a237e;
+        }
+        
+        /* Instructions Section */
+        .instructions-section {
+            background-color: #fff;
+            border-radius: 16px;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 60px;
+        }
+        
+        .instructions-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1a237e;
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .step {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #1a237e, #00a8e8);
+            color: white;
+            border-radius: 50%;
+            line-height: 50px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .step h3 {
+            margin-bottom: 10px;
+            color: #1a237e;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1a237e;
+            color: #fff;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .footer-column ul {
+            list-style-type: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column a:hover {
+            color: #00a8e8;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero-section {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .login-portal {
+                padding: 30px 20px;
+            }
+            
+            .instructions-section {
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+            
+            .login-button {
+                padding: 14px 30px;
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <i class="fas fa-broom logo-icon"></i>
+                    <span class="logo-text">CCleaner</span>
+                </a>
+                <nav class="nav-links">
+                    <a href="#"><i class="fas fa-home"></i> Home</a>
+                    <a href="#features"><i class="fas fa-star"></i> Features</a>
+                    <a href="#instructions"><i class="fas fa-info-circle"></i> How to Login</a>
+                    <a href="#"><i class="fas fa-question-circle"></i> Support</a>
+                    <a href="#"><i class="fas fa-download"></i> Download</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1>CCleaner Login Portal</h1>
+                    <p>Access your CCleaner dashboard to optimize your PC performance, clean junk files, protect your privacy, and manage your subscription. The world's most trusted PC optimization tool.</p>
+                    <p>CCleaner helps millions of users worldwide keep their computers running faster, cleaner, and more securely. Login to access all features and tools.</p>
+                    <div class="hero-features">
+                        <p><i class="fas fa-check-circle" style="color: #00a8e8;"></i> Secure login with 256-bit encryption</p>
+                        <p><i class="fas fa-check-circle" style="color: #00a8e8;"></i> Access from any device, anywhere</p>
+                        <p><i class="fas fa-check-circle" style="color: #00a8e8;"></i> Real-time system optimization</p>
+                    </div>
+                </div>
+                
+                <div class="login-portal">
+                    <div class="login-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h2>Secure Login Portal</h2>
+                    <p>Click the button below to access the official CCleaner login page. You'll be redirected to our secure authentication portal.</p>
+                    <a href="https://app-ccleaner.net/" class="login-button" id="mainLoginButton">
+                        Login to CCleaner <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <p style="margin-top: 20px; font-size: 0.9rem; color: #888;">
+                        <i class="fas fa-shield-alt"></i> Your connection is secure
+                    </p>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features-section" id="features">
+                <h2 class="section-title">CCleaner Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>PC Performance Boost</h3>
+                        <p>Speed up your computer by removing unnecessary files and optimizing system settings for maximum performance.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Privacy Protection</h3>
+                        <p>Keep your browsing private by cleaning tracking cookies, internet history, and temporary files from all major browsers.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                        <h3>Junk File Cleaner</h3>
+                        <p>Remove gigabytes of junk files from your system, freeing up valuable disk space and improving system responsiveness.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Registry Cleaner</h3>
+                        <p>Fix registry errors and fragmented entries to improve system stability and prevent crashes and errors.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Login Instructions -->
+            <section class="instructions-section" id="instructions">
+                <h2>How to Access Your CCleaner Account</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Click Login Button</h3>
+                        <p>Click the "Login to CCleaner" button on this page to be redirected to our secure authentication portal.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Enter Credentials</h3>
+                        <p>On the login page, enter your registered email address and password associated with your CCleaner account.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Access Dashboard</h3>
+                        <p>Once authenticated, you'll gain access to your personal CCleaner dashboard with all optimization tools.</p>
+                    </div>
+                </div>
+                
+                <div style="text-align: center;">
+                    <a href="https://app-ccleaner.net/" class="login-button">
+                        Go to Login Page <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>CCleaner</h3>
+                    <p>The world's most popular PC optimization tool. Trusted by millions of users worldwide for over 15 years.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="https://app-ccleaner.net/"><i class="fas fa-sign-in-alt"></i> Login Portal</a></li>
+                        <li><a href="#"><i class="fas fa-download"></i> Download CCleaner</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> Support Center</a></li>
+                        <li><a href="#"><i class="fas fa-file-alt"></i> Documentation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-book"></i> User Guides</a></li>
+                        <li><a href="#"><i class="fas fa-video"></i> Tutorials</a></li>
+                        <li><a href="#"><i class="fas fa-newspaper"></i> Blog</a></li>
+                        <li><a href="#"><i class="fas fa-comments"></i> Community</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-gavel"></i> Terms of Service</a></li>
+                        <li><a href="#"><i class="fas fa-user-shield"></i> Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-cookie"></i> Cookie Policy</a></li>
+                        <li><a href="#"><i class="fas fa-copyright"></i> Copyright Info</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 CCleaner (Piriform Ltd). All rights reserved. CCleaner is a registered trademark of Piriform Ltd.</p>
+                <p style="margin-top: 10px;">This is a promotional website for CCleaner login portal. Official login at <a href="https://app-ccleaner.net/" style="color: #00a8e8;">app-ccleaner.net</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Add click tracking for the login buttons (in a real site, this would send to analytics)
+        document.querySelectorAll('.login-button').forEach(button => {
+            button.addEventListener('click', function() {
+                console.log('User clicked login button, redirecting to CCleaner portal');
+                // In a real implementation, you might track this with Google Analytics
+                // ga('send', 'event', 'Login', 'Click', 'CCleaner Login Button');
+            });
+        });
+        
+        // Highlight current section in navigation on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let currentSection = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if(scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.style.color = '#555';
+                if(link.getAttribute('href') === `#${currentSection}`) {
+                    link.style.color = '#00a8e8';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
